@@ -1,7 +1,9 @@
 import React from 'react';
 
 type MyProps = {
-    weather: string
+    weather: string,
+    temp: number,
+    name: string
 }
 
 const WeatherDisplay = (props: MyProps) => {
@@ -9,7 +11,9 @@ const WeatherDisplay = (props: MyProps) => {
         <div>
             <h1>Current Weather</h1>
             <p>The current weather for your location is:</p>
+            <p>{props.name}</p>
             <p>{props.weather}</p>
+            <p>{props.temp}</p>
         </div>
     )
 }
