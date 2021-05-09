@@ -1,12 +1,11 @@
 import React from 'react';
-import Location from './components/ClassComponent';
-import WeatherDisplay from './components/FunctionalComponent';
+import Weather from './components/ClassComponent';
+
 
 const App: React.FunctionComponent = () => {
   return (
     <div className = "App">
-      <WeatherDisplay/>
-      <Location/>
+      <Weather/>
     </div>
   );
 }
